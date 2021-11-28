@@ -1,13 +1,11 @@
 package ru.netology;
 
 import org.junit.Test;
-import org.junit.jupiter.api.Assertions;
 
 import static org.junit.Assert.*;
 
 
-
-public class BonusServiceTest {
+public class BonusServiceJUnit4Test {
 
     BonusService bonusService = new BonusService();
 
@@ -43,11 +41,4 @@ public class BonusServiceTest {
         assertEquals(actual, expected);
     }
 
-    @org.junit.jupiter.api.Test
-    public void shouldLeftToByeForCashback700() {
-        int actual = bonusService.remain(700);
-        int expected = 300;
-
-        Assertions.assertEquals(expected, actual);
-    }
 }
