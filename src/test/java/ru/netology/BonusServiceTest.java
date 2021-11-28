@@ -9,7 +9,7 @@ class BonusServiceTest {
     BonusService bonusService = new BonusService();
 
     @Test
-    public void remain() {
+    public void shouldLeftToByeForCashback800() {
     int actual = bonusService.remain(800);
     int expected = 200;
 
